@@ -18,6 +18,7 @@ function App() {
     <AppState.Provider value={{ login, setLogin, userName, setUserName }}>
       <div className="App relative">
         <Header />
+        <h1>{process.env.REACT_APP_AZAZ}</h1>
         <ToastContainer />
         <Routes>
           <Route path="/" element={<Cards />} />

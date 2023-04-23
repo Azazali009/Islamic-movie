@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA19vAOH2l1oBcC3_o4CXAX0y1454umvgo",
-  authDomain: "islamic-movies-71784.firebaseapp.com",
-  projectId: "islamic-movies-71784",
-  storageBucket: "islamic-movies-71784.appspot.com",
-  messagingSenderId: "203721857048",
-  appId: "1:203721857048:web:8a3bc9e71ea0b4707dcb6d",
+  apiKey: process.env.REACT_APP_DB_API_KEY,
+  authDomain: process.env.REACT_APP_DB_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_DB_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_DB_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_DB_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_DB_APP_ID,
 };
 
 // Initialize Firebase
